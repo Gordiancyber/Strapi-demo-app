@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_category_categories",
+  "info": {
+    "displayName": "Category",
+    "icon": "chartBubble",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "localazy_demos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::localazy-demo.localazy-demo"
+    }
+  }
+}

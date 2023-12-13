@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "localazy_demos",
+  "info": {
+    "singularName": "localazy-demo",
+    "pluralName": "localazy-demos",
+    "displayName": "Localazy demo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "localazy_demos"
+    }
+  }
+}

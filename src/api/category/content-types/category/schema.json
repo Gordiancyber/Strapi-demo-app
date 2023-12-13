@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "localazy_demos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::localazy-demo.localazy-demo",
+      "inversedBy": "categories"
+    }
+  }
+}
